@@ -1,12 +1,14 @@
 package org.yxw.io;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.List;
 
-/**
- * 简单示例：演示ResourceResolver的基本用法
- */
-public class SimpleExample {
-    public static void main(String[] args) {
+
+public class ResourceResolverTest {
+
+    @Test
+    public void testResourceResolverScanClass() {
         // 创建ResourceResolver实例，指定要扫描的基础包
         ResourceResolver resolver = new ResourceResolver("org.yxw");
 
@@ -15,6 +17,7 @@ public class SimpleExample {
             String name = resource.getName();
             // 只处理.class文件
             if (name.endsWith(".class")) {
+                System.out.println(name);
                 return name.substring(0, name.length() - 6).replace("/", ".").replace("\\", ".");
             }
             return null;
@@ -28,4 +31,3 @@ public class SimpleExample {
         System.out.println("\n共找到 " + classFiles.size() + " 个类文件");
     }
 }
-
