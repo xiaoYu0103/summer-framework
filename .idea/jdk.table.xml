@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="1.8" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;1.8.0_201&quot;" />
+      <homePath value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home" />
+      <roots>
+        <annotationsPath>
+          <root type="composite">
+            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/jdkAnnotations.jar!/" type="simple" />
+          </root>
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/charsets.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/deploy.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/cldrdata.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/dnsns.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/jaccess.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/jfxrt.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/localedata.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/nashorn.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/sunec.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/sunjce_provider.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/sunpkcs11.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/ext/zipfs.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/javaws.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/jce.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/jfr.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/jfxswt.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/jsse.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/management-agent.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/plugin.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/resources.jar!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/jre/lib/rt.jar!/" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="jar://$PROJECT_SDK_NAME$/src.zip!/" type="simple" />
+            <root url="jar://$PROJECT_SDK_NAME$/javafx-src.zip!/" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+  </component>
+</project>
+
