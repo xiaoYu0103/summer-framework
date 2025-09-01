@@ -66,7 +66,7 @@ public class AnnotationConfigApplicationContext {
                 }
 
                 String beanName = ClassUtils.getBeanName(clazz);
-                BeanDefinition def = new BeanDefinition(beanName, clazz, getSuitableConstructor(clazz), getOrder(clazz), clazz.isAnnotationPresent(Priority.class), null, null,
+                BeanDefinition def = new BeanDefinition(beanName, clazz, getSuitableConstructor(clazz), getOrder(clazz), clazz.isAnnotationPresent(Primary.class), null, null,
                         ClassUtils.findAnnotationMethod(clazz, PostConstruct.class), ClassUtils.findAnnotationMethod(clazz, PreDestroy.class));
                 addBeanDefinitions(beanDefinitionMap, def);
                 logger.debug("define bean: {}", def);
@@ -270,6 +270,14 @@ public class AnnotationConfigApplicationContext {
         } else {
             throw new NoUniqueBeanDefinitionException(String.format("Multiple bean with type '%s' found, and multiple @Primary specified.", type.getName()));
         }
+    }
+
+    /**
+     * 根据Name查找BeanDefinition，如果Name不存在，返回null
+     */
+    @Nullable
+    public BeanDefinition findBeanDefinition(String name) {
+        return this.beans.get(name);
     }
 }
 
